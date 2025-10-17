@@ -233,7 +233,7 @@ h2::after {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* KONTAK FORM */
+/* KONTAK FORM (jika ada) */
 .contact-form {
   max-width: 600px;
   margin: auto;
@@ -257,6 +257,60 @@ h2::after {
 
 .contact-form button {
   align-self: flex-start;
+}
+
+/* ---------------------------
+   CONTACT LIST MODERN (Tombol Kontak)
+---------------------------- */
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  display: inline-block;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.contact-list a:hover {
+  background-color: #0056d2;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ICONS (Font Awesome) */
+.contact-list a i {
+  font-size: 1.2rem;
+}
+
+/* RESPONSIVE CONTACT */
+@media (max-width: 480px) {
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-list a {
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 /* ---------------------------
