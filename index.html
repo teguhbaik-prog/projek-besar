@@ -1,89 +1,193 @@
 <!DOCTYPE html>
 <html lang="ms">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-      content="width=device-width,initial-scale=1.0">
-    <title>Perkhidmatan Binaan Pak Solihin</title>
-    <link rel="stylesheet"
-      href="style.css">
-  </head>
-  <body>
-
-    <header>
-      <div class="container">
-        <h1
-          id="judul">Perkhidmatan Binaan Pak Solihin</h1>
-        <p id="deskripsi<!DOCTYPE html>
-<html lang="ms">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkhidmatan Binaan Pak Solihin</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laman Rasmi Pak Solihin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigasi Utama -->
+  <header>
+    <div class="container">
+      <h1 id="site-title" data-ms="Laman Rasmi Pak Solihin"
+          data-id="Situs Resmi Pak Solihin"
+          data-en="Official Website of Mr. Solihin">
+        Laman Rasmi Pak Solihin
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="lang" 
+                 data-ms="Utama" data-id="Beranda" data-en="Home">Utama</a></li>
+          <li><a href="#about" class="lang"
+                 data-ms="Tentang" data-id="Tentang" data-en="About">Tentang</a></li>
+          <li><a href="#services" class="lang"
+                 data-ms="Perkhidmatan" data-id="Layanan" data-en="Services">Perkhidmatan</a></li>
+          <li><a href="#gallery" class="lang"
+                 data-ms="Galeri" data-id="Galeri" data-en="Gallery">Galeri</a></li>
+          <li><a href="#contact" class="lang"
+                 data-ms="Hubungi" data-id="Kontak" data-en="Contact">Hubungi</a></li>
+        </ul>
+      </nav>
+      <!-- Pilihan Bahasa -->
+      <div class="language-selector">
+        <label for="language">Bahasa:</label>
+        <select id="language">
+          <option value="ms" selected>Bahasa Malaysia</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <h1 id="judul">Perkhidmatan Binaan Pak Solihin</h1>
-            <p id="deskripsi">Kami sedia membantu membina rumah impian anda.</p>
-
-            <table class="bahasa">
-                <tr>
-                    <th>Pilih Bahasa:</th>
-                    <td onclick="setLanguage('ms')">🇲🇾 Malaysia</td>
-                    <td onclick="setLanguage('id')">🇮🇩 Indonesia</td>
-                    <td onclick="setLanguage('en')">🇬🇧 English</td>
-                </tr>
-            </table>
-
-          <nav>
-            <ul class="menu">
-                    <li><a href="#tentang">Tentang</a></li>
-                    <li><a href="#layanan">Layanan</a></li>
-                    <li><a href="#galeri">Galeri</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+  <!-- Bagian Utama -->
   <main>
-        <section id="tentang" class="fade-in">
-            <h2 id="tentang-judul">Tentang Kami</h2>
-            <p id="tentang-deskripsi">
-                Kami adalah tim binaan Pak SOlihin yang berpengalaman dalam bidang pembinaan dan rekabentuk rumah.
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="content">
+        <h2 class="lang" 
+            data-ms="Selamat Datang di Laman Rasmi Pak Solihin"
+            data-id="Selamat Datang di Situs Resmi Pak Solihin"
+            data-en="Welcome to Mr. Solihin’s Official Website">
+          Selamat Datang di Laman Rasmi Pak Solihin
+        </h2>
+        <p class="lang"
+           data-ms="Kami menyediakan perkhidmatan binaan dan rekabentuk yang berkualiti tinggi."
+           data-id="Kami menyediakan layanan bangunan dan desain berkualitas tinggi."
+           data-en="We provide high-quality construction and design services.">
+          Kami menyediakan perkhidmatan binaan dan rekabentuk yang berkualiti tinggi.
+        </p>
+        <a href="#services" class="btn lang"
+           data-ms="Lihat Perkhidmatan"
+           data-id="Lihat Layanan"
+           data-en="View Services">
+          Lihat Perkhidmatan
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="lang"
+            data-ms="Tentang Pak Solihin"
+            data-id="Tentang Pak Solihin"
+            data-en="About Mr. Solihin">
+          Tentang Pak Solihin
+        </h2>
+        <p class="lang"
+           data-ms="Dengan pengalaman lebih 20 tahun dalam bidang pembinaan, Pak Solihin telah menghasilkan pelbagai projek berkualiti tinggi di Malaysia dan Indonesia."
+           data-id="Dengan pengalaman lebih dari 20 tahun di bidang konstruksi, Pak Solihin telah menyelesaikan berbagai proyek berkualitas tinggi di Malaysia dan Indonesia."
+           data-en="With over 20 years of experience in construction, Mr. Solihin has delivered many high-quality projects in Malaysia and Indonesia.">
+          Dengan pengalaman lebih 20 tahun dalam bidang pembinaan, Pak Solihin telah menghasilkan pelbagai projek berkualiti tinggi di Malaysia dan Indonesia.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt-bg">
+      <div class="container">
+        <h2 class="lang"
+            data-ms="Perkhidmatan Kami"
+            data-id="Layanan Kami"
+            data-en="Our Services">
+          Perkhidmatan Kami
+        </h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="lang"
+                data-ms="Rekabentuk Bangunan"
+                data-id="Desain Bangunan"
+                data-en="Building Design">
+              Rekabentuk Bangunan
+            </h3>
+            <p class="lang"
+               data-ms="Rekabentuk moden dan klasik mengikut keperluan pelanggan."
+               data-id="Desain modern dan klasik sesuai kebutuhan klien."
+               data-en="Modern and classic designs tailored to clients’ needs.">
+              Rekabentuk moden dan klasik mengikut keperluan pelanggan.
             </p>
-        </section>
+          </div>
+          <div class="service-card">
+            <h3 class="lang"
+                data-ms="Pembinaan"
+                data-id="Konstruksi"
+                data-en="Construction">
+              Pembinaan
+            </h3>
+            <p class="lang"
+               data-ms="Pasukan berpengalaman memastikan hasil yang selamat dan tahan lama."
+               data-id="Tim berpengalaman memastikan hasil yang aman dan tahan lama."
+               data-en="Experienced team ensures safe and durable results.">
+              Pasukan berpengalaman memastikan hasil yang selamat dan tahan lama.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3 class="lang"
+                data-ms="Penyelenggaraan"
+                data-id="Perawatan"
+                data-en="Maintenance">
+              Penyelenggaraan
+            </h3>
+            <p class="lang"
+               data-ms="Perkhidmatan selepas pembinaan untuk memastikan kepuasan pelanggan."
+               data-id="Layanan pasca konstruksi untuk memastikan kepuasan klien."
+               data-en="Post-construction maintenance to ensure client satisfaction.">
+              Perkhidmatan selepas pembinaan untuk memastikan kepuasan pelanggan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="layanan" class="fade-in">
-            <h2 id="layanan-judul">Layanan</h2>
-            <ul id="layanan-list">
-                <li>Reka bentuk rumah</li>
-                <li>Pembinaan bangunan</li>
-                <li>Penyelenggaraan dan renovasi</li>
-            </ul>
-        </section><section id="galeri" class="fade-in">
-            <h2 id="galeri-judul">Galeri Projek</h2>
-            <p id="galeri-deskripsi">Beberapa projek terbaru kami yang telah siap dibina.</p>
-            <div class="galeri-grid">
-                <img src="img/projek1.jpg" alt="Projek 1">
-                <img src="img/projek2.jpg" alt="Projek 2">
-                <img src="img/projek3.jpg" alt="Projek 3">
-            </div>
-        </section>
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="lang"
+            data-ms="Galeri Projek"
+            data-id="Galeri Proyek"
+            data-en="Project Gallery">
+          Galeri Projek
+        </h2>
+        <div class="gallery-grid">
+          <img src="img/project1.jpg" alt="Projek 1" />
+          <img src="img/project2.jpg" alt="Projek 2" />
+          <img src="img/project3.jpg" alt="Projek 3" />
+        </div>
+      </div>
+    </section>
 
-        <section id="kontak" class="fade-in">
-            <h2 id="kontak-judul">Kontak</h2>
-            <p id="kontak-deskripsi">Hubungi kami untuk pertanyaan atau konsultasi.</p>
-            <p>Email: <a href="mailto:info@paktg.com">info@paktg.com</a></p>
-        </section>
-    </main>
+    <!-- CONTACT -->
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <h2 class="lang"
+            data-ms="Hubungi Kami"
+            data-id="Hubungi Kami"
+            data-en="Contact Us">
+          Hubungi Kami
+        </h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Nama" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Mesej"></textarea>
+          <button type="submit" class="btn lang"
+                  data-ms="Hantar" data-id="Kirim" data-en="Send">Hantar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-        <p>&copy; 2025 Perkhidmatan Binaan Pak Solihin. Semua hak cipta dilindungi.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <p class="lang"
+       data-ms="© 2025 Pak Solihin. Hak cipta terpelihara."
+       data-id="© 2025 Pak Solihin. Hak cipta dilindungi."
+       data-en="© 2025 Mr. Solihin. All rights reserved.">
+      © 2025 Pak Solihin. Hak cipta terpelihara.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-      </html>
+</html>
